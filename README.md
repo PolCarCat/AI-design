@@ -1,8 +1,8 @@
 
 
 ### Table of Contents
-**[Intro](#Intro)**<br>
-**[Usage Instruction](#usage-instruction)**<br>
+**[Intro](#intro)**<br>
+**[AI types](#ai-types)**<br>
 **[Troubleshooting](#troubleshooting)**<br>
 **[Compatibility](#compatibility)**<br>
 **[Notes and Miscellaneous](#notes-and-miscellaneous)**<br>
@@ -12,7 +12,7 @@
 ## Intro
 
 
-## Usage Instruction
+## AI types
 
 Install it, and then…
 
