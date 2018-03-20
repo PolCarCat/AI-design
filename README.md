@@ -11,6 +11,27 @@
 
 ## Intro
 
+### About me 
+
+I am Pol Carrera Catalina, student of the Bachelor’s Degree in Video Games by UPC at CITM. This content is generated for the second year’s subject Project 2, under supervision of lecturer Ricard Pillosu.
+
+###
+
+Artificial intelligence is an informatic program that allows systems choose reasoned decisions based on the current state and the necessities of the program. It tries to simulate a natural behaviour through computer algorithms.
+
+AI is a fundamental part of video games, that is used on enemies, neutral npcs and computer allies. 
+During the years of the video game history the AI has evolved like the games itself, from the pong rival to Ellie from the last of us.
+
+Every game has the same purpose that is making the players enjoy the experience, it’s made by creating an environment and flow confortable or challenging to the player. So the AI has the same objectives, the entities in a game have to help the player achieve the game experience.
+
+This intelligence tries to simulate a player or a living mind so the player can relate all the behavior that the NPC to a real person, at the end the main objective is to make the player feel like these entities have their own thoughts and make him able to empathise with code lines.
+Also AI has to create memorable moments so we try to reach them by creating unique types of entities that has different behaviour, that at the end is mixing and adapting existing behavior components that fits in the current situation. 
+The design of the entities has to be focused on what the player is going to interact.
+
+How are the memorable moments created? It has proven that the human brain retains more information if it’s a situation that causes emotional arousal, in other words, that the situations that the user feel more connected or scared, that touches his emotions are more memorable. 
+Also memorable moments are strengthened if the brain generates stress hormones, so the brain remembers more if it’s a danger situation.
+    
+So the necessity that the humans to need of interaction with other living beings it’s accomplished.
 
 ## AI types
 
