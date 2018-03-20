@@ -2,7 +2,7 @@
 
 ### Table of Contents
 **[Intro](#Intro)**<br>
-**[Usage Instructions](#usage-instructions)**<br>
+**[Usage Instruction](#usage-instruction)**<br>
 **[Troubleshooting](#troubleshooting)**<br>
 **[Compatibility](#compatibility)**<br>
 **[Notes and Miscellaneous](#notes-and-miscellaneous)**<br>
@@ -11,57 +11,8 @@
 
 ## Intro
 
-### Chrome
 
-#### Chrome Web Store
-
-Go to the [Chrome Web Store page for *Markdown Here*](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa) and install normally.
-
-After installing, make sure to reload your webmail or restart Chrome!
-
-#### Manual/Development
-
-1. Clone this repo.
-2. In Chrome, open the Extensions settings. (Wrench button, Tools, Extensions.)
-3. On the Extensions settings page, click the "Developer Mode" checkbox.
-4. Click the now-visible "Load unpacked extension…" button. Navigate to the directory where you cloned the repo, then the `src` directory under that.
-5. The *Markdown Here* extension should now be visible in your extensions list.
-6. Reload your webmail page (and maybe application) before trying to convert an email.
-
-### Firefox and Thunderbird
-
-#### Mozilla Add-ons site
-
-Go to the [Firefox Add-ons page for *Markdown Here*](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/) and install normally.
-
-Or go to the "Tools > Add-ons" menu and then search for "Markdown Here".
-
-After installing, make sure to restart Firefox/Thunderbird!
-
-**Note:** It takes up to a month for Mozilla to approve changes to the Firefox/Thunderbird extension, so updates (features, fixes) will lag behind what is shown here. You can manually choose to install the newest version before it's reviewed from the list of versions: [https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/)
-
-#### Manual/Development
-
-1. Clone this repo.
-2. Follow the instructions in the MDN ["Setting up an extension development environment"](https://developer.mozilla.org/en/Setting_up_extension_development_environment) article.
-
-### Safari
-
-[Download the extension directly.](https://s3.amazonaws.com/markdown-here/markdown-here.safariextz) When it has finished downloading, double click it to install.
-
-#### Preferences
-
-To get to the Markdown Here preferences, open the Safari preferences and then go to the "Extensions" tab. Then click the "Click me to show Markdown Here options" box.
-
-### Opera
-
-Note that *Markdown Here* only works with Opera versions 16 and higher (i.e., the ones that are based on Chromium).
-
-Go to the [Opera Add-ons store page for *Markdown Here*](https://addons.opera.com/en/extensions/details/markdown-here/) and install normally.
-
-After installing, make sure to reload your webmail or restart Chrome!
-
-## Usage Instructions
+## Usage Instruction
 
 Install it, and then…
 
