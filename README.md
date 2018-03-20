@@ -1,7 +1,7 @@
 
 
 ### Table of Contents
-**[Installation Instructions](#Intro)**<br>
+**[Intro](#Intro)**<br>
 **[Usage Instructions](#usage-instructions)**<br>
 **[Troubleshooting](#troubleshooting)**<br>
 **[Compatibility](#compatibility)**<br>
