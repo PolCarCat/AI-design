@@ -9,13 +9,12 @@
 **[Building the Extension Bundles](#building-the-extension-bundles)**<br>
 **[Next Steps, Credits, Feedback, License](#next-steps)**<br>
 
-## Intro
 
 ### About me 
 
 I am Pol Carrera Catalina, student of the Bachelor’s Degree in Video Games by UPC at CITM. This content is generated for the second year’s subject Project 2, under supervision of lecturer Ricard Pillosu.
 
-###
+## Intro
 
 Artificial intelligence is an informatic program that allows systems choose reasoned decisions based on the current state and the necessities of the program. It tries to simulate a natural behaviour through computer algorithms.
 
@@ -35,36 +34,41 @@ So the necessity that the humans to need of interaction with other living beings
 
 ## AI types
 
+### Friendly
+The friendly AI are those that support the player during his journey, it will aid the player and help fighting against the enemies.
+The main goal of the friendly AI is to make the player two basic emotions that are the affection and  the synergy.The affection is seeked by creating a bond between the player and the AI, the synergy is created by collaboration and codependence.
+ 
+### Neutral
+The neutral entities are those that are irrelevant to the main story. There are used in the situations were the game doesn’t have a high level of engagement, that the game slows the intensity, neutral AI fill these moments by adding more diversity and depth to the world. The examples of these AI are the typical walking people used in GTA or Assassin's Creed saga.
+
+### Enemies
+
+Enemies are the creatures that challenge the player that has to overcome using fighting mechanics. The enemies has several functions, that are explained later below, the enemies have to be fair, so in the design it’s included the tells, that is all the information that give to the player and the combat behavior.  
+
 
 
 ## Functions
 
-See the [Troubleshooting wiki page](https://github.com/adam-p/markdown-here/wiki/Troubleshooting).
+The player is presented a series of challenging situation that he has to overcome. These situations has to be different from each other in order to make a memorable fight. But in order to make it fair the player has to find a way to win the battle, so first the enemy has to give information to the player so he can think the way to react. 
+
+These information is given through sound and visual effects that the player can relate to the characteristic of the player, for example if one enemy is immune to sword attacks when the player hits it with a sword in can appear some sparks and a bounce back animation making him know that the attack doesn’t affect.  
+
+Finally to present these qualities the environment should help the player notice them and act in his favor. For example if there is an enemy that push the player to pitfalls first there should be an area where the player can fall to safe place and when he has learnt that he can’t go near pitfalls when these enemies are near, the level changes to places with higher danger falls.
+
+Some enemies can be focused in make the player train specific mechanics, so the reward is higher if the player uses the mechanic, it can be encouraging the users use it or forcing them and make the enemy unkillable unless if he uses the mechanic.
+Some other enemies only exists for be killed, and give the player the fatisfaction and fun of smashing several enemies. Are the most common enemies that are commonly used to introduce the combat.
+And there are also enemies that are used to make the player struggle and test their skill in combat.   
 
 
 ## Tells
 
-See the [Compatibility wiki page](https://github.com/adam-p/markdown-here/wiki/Compatibility).
-
+As i mentioned before the tells are those actions that make the player know what the enemy is going to do. The tell gives the player the chance to adapt and respond to the actions of the enemy.
+It has to be clear and specific for each action, so if there is a strong attack the enemy will hold its position for a period of time with a unique animation. 
+In Nier automata before every enemy attack it gives audio feedback and their eyes does a red blink.
+These is also used in most of the stealth games where the player can hear the “conversations” between the AI about what are they going to do.
 
 ## Behaviour
 
-* *Markdown Here* uses [Github Flavored Markdown](http://github.github.com/github-flavored-markdown/), with the limitation that GFM special links are not supported ([issue #11](https://github.com/adam-p/markdown-here/issues/11)); nor will they be, as MDH is not Github-specific.
-
-* Available languages for syntax highlighting (and the way they should be written in the fenced code block) can be seen on the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
-
-* Images embedded inline in your Markdown will be retained when you "Markdown Toggle". Gmail allows you to put images inline in your email -- this can be much easier than referencing an external image.
-
-* Email signatures are automatically excluded from conversion. Specifically, anything after the semi-standard `'-- '` (note the trailing space) is left alone.
-  * Note that Hotmail and Yahoo do *not* automatically add the `'-- '` to signatures, so you have to add it yourself.
-
-* The "Markdown Toggle" menu item shows up for more element types than it can correctly render. This is intended to help people realize that they're not using a rich editor. Otherwise they just don't see the menu item and don't know why.
-
-* Styling:
-  * The use of browser-specific styles (-moz-, -webkit-) should be avoided. If used, they may not render correctly for people reading the email in a different browser from the one where the email was sent.
-  * The use of state-dependent styles (like `a:hover`) don't work because they don't match at the time the styles are made explicit. (In email, styles must be explicitly applied to all elements -- stylesheets get stripped.)
-
-* For more tweaky features, visit the [Tips and Tricks](https://github.com/adam-p/markdown-here/wiki/Tips-and-Tricks) section.
 
 ## Building the Extension Bundles
 
