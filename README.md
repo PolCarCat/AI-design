@@ -1,13 +1,13 @@
 
 
 ### Table of Contents
+
 **[Intro](#intro)**<br>
 **[AI types](#ai-types)**<br>
 **[Functions](#functions)**<br>
 **[Tells](#tells)**<br>
 **[Behaviour](#behaviour)**<br>
-**[Building the Extension Bundles](#building-the-extension-bundles)**<br>
-**[Next Steps, Credits, Feedback, License](#next-steps)**<br>
+**[Bibliography](#bibliography)**<br>
 
 
 ### About me 
@@ -158,3 +158,61 @@ It is based in four basic rules:
 
 Selection Expansion Simulation Update
 
+
+## Bibliography
+
+Intro
+
+[https://www.gamasutra.com/blogs/NathanSavant/20160104/262944/Enemy\_Design\_in\_Link\_to\_the\_Past.php](https://www.gamasutra.com/blogs/NathanSavant/20160104/262944/Enemy_Design_in_Link_to_the_Past.php)
+
+[https://www.gamasutra.com/blogs/BartVossen/20150504/242543/Enemy\_design\_and\_enemy\_AI\_for\_melee\_combat\_systems.php](https://www.gamasutra.com/blogs/BartVossen/20150504/242543/Enemy_design_and_enemy_AI_for_melee_combat_systems.php)
+
+[https://software.intel.com/en-us/articles/designing-artificial-intelligence-for-games-part-1](https://software.intel.com/en-us/articles/designing-artificial-intelligence-for-games-part-1)
+
+[http://halo.bungie.org/misc/gdc.2002.haloai/talk.html](http://halo.bungie.org/misc/gdc.2002.haloai/talk.html)
+
+[https://www.gamasutra.com/view/news/295254/Make\_me\_think\_make\_me\_move\_New\_Dooms\_deceptively\_simple\_design.php](https://www.gamasutra.com/view/news/295254/Make_me_think_make_me_move_New_Dooms_deceptively_simple_design.php)
+
+[https://software.intel.com/en-us/articles/two-brains-are-better-than-one](https://software.intel.com/en-us/articles/two-brains-are-better-than-one)
+
+[https://arxiv.org/pdf/1607.05028.pdf](https://arxiv.org/pdf/1607.05028.pdf)
+
+[https://www.ercim.eu/publication/Ercim\_News/enw57/spronck.html](https://www.ercim.eu/publication/Ercim_News/enw57/spronck.html)
+
+[https://www.sciencedirect.com/science/article/pii/S0167642307000548](https://www.sciencedirect.com/science/article/pii/S0167642307000548)
+
+[https://www.youtube.com/watch?v=1xWg54mdQos](https://www.youtube.com/watch?v=1xWg54mdQos)
+
+[https://www.gamasutra.com/view/feature/131735/designing\_enemies\_with\_distinct\_.php](https://www.gamasutra.com/view/feature/131735/designing_enemies_with_distinct_.php)
+
+[https://www.youtube.com/watch?v=ZlShFdoAOxU](https://www.youtube.com/watch?v=ZlShFdoAOxU)
+
+[https://www.youtube.com/watch?v=iVBCBcEANBc](https://www.youtube.com/watch?v=iVBCBcEANBc)
+
+Finite state machine
+
+[https://research.ncl.ac.uk/game/mastersdegree/gametechnologies/artificialintelligence1finitestatemachines/2016%20Tutorial%208%20-%20Finite%20State%20Machines.pdf](https://research.ncl.ac.uk/game/mastersdegree/gametechnologies/artificialintelligence1finitestatemachines/2016%20Tutorial%208%20-%20Finite%20State%20Machines.pdf)
+
+[https://gamedevelopment.tutsplus.com/tutorials/finite-state-machines-theory-and-implementation--gamedev-11867](https://gamedevelopment.tutsplus.com/tutorials/finite-state-machines-theory-and-implementation--gamedev-11867)
+
+Behaviour trees
+
+[https://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior\_trees\_for\_AI\_How\_they\_work.php](https://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php)
+
+[https://www.gamasutra.com/view/feature/130663/gdc\_2005\_proceeding\_handling\_.php](https://www.gamasutra.com/view/feature/130663/gdc_2005_proceeding_handling_.php)
+
+[http://www.what-could-possibly-go-wrong.com/fluent-behavior-trees-for-ai-and-game-logic/](http://www.what-could-possibly-go-wrong.com/fluent-behavior-trees-for-ai-and-game-logic/)
+
+GOAP
+
+[https://gamedevelopment.tutsplus.com/tutorials/goal-oriented-action-planning-for-a-smarter-ai--cms-20793](https://gamedevelopment.tutsplus.com/tutorials/goal-oriented-action-planning-for-a-smarter-ai--cms-20793)
+
+[https://www.youtube.com/watch?v=gm7K68663rA](https://www.youtube.com/watch?v=gm7K68663rA)
+
+[http://alumni.media.mit.edu/~jorkin/GOAP\_draft\_AIWisdom2\_2003.pdf](http://alumni.media.mit.edu/~jorkin/GOAP_draft_AIWisdom2_2003.pdf)
+
+[https://jaredemitchell.com/goal-oriented-action-planning-research/](https://jaredemitchell.com/goal-oriented-action-planning-research/)
+
+**MONTE CARLO**
+
+[https://www.youtube.com/watch?v=onBYsen2\_eA](https://www.youtube.com/watch?v=onBYsen2_eA)
