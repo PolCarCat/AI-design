@@ -97,6 +97,8 @@ Finite state machine example
 
 https://gamedevelopment.tutsplus.com/tutorials/finite-state-machines-theory-and-implementation--gamedev-11867
 
+Finite state machine online editor: http://madebyevan.com/fsm/
+
 ### Behaviour trees 
 
 Ai also can be organized in a hierarchical structure, instead of a closed loop like the finite state machine systems. The behaviour trees separate the actions and connects them through a branching system. These branches can be expanded limitless and there are highly iterable.  
