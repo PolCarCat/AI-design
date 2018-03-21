@@ -59,6 +59,10 @@ Some enemies can be focused in make the player train specific mechanics, so the 
 Some other enemies only exist for be killed, and give the player the satisfaction and fun of smashing several enemies. Are the most common enemies that are commonly used to introduce the combat.
 And there are also enemies that are used to make the player struggle and test their skill in combat.   
 
+In hollow kight there is an enemy that can only be defeated using an special ability that is learnt in the middle of the game.
+
+<img src="https://i.ytimg.com/vi/aCq-H2XC6SY/maxresdefault.jpg" width = 800/>
+https://www.youtube.com/watch?v=aCq-H2XC6SY
 
 ## Tells
 
@@ -66,7 +70,9 @@ As I mentioned before the tells are those actions that make the player know what
 It has to be clear and specific for each action, so if there is a strong attack the enemy will hold its position for a period of time with a unique animation. 
 In Nier automata before every enemy attack it gives audio feedback and their eyes does a red blink.
 These is also used in most of the stealth games where the player can hear the “conversations” between the AI about what are they going to do.
+<img src="https://cdn.arstechnica.net/wp-content/uploads/sites/3/2017/03/NIERA_DEMO_SS02_HeavyAttack.jpg" width = 800/>
 
+https://arstechnica.com/gaming/2017/03/nier-automata-review/
 
 ## Behaviour
 
@@ -85,6 +91,10 @@ The flow of the nodes is determined by a series of Booleans that choose the path
 
 Finite state machine example
 
+<img src="https://i.pinimg.com/474x/a8/2d/d8/a82dd821d6548d55978c1943b6de0b0d--finite-state-machine-game-design.jpg"/>
+
+
+https://gamedevelopment.tutsplus.com/tutorials/finite-state-machines-theory-and-implementation--gamedev-11867
 
 ### Behaviour trees 
 
@@ -114,7 +124,12 @@ It can only have one child and are used to change the returned status of the its
 #### Leafs: 
 The leafs are the actions, like walk to a certain position. And are incapable of follow a branch. 
 
- 
+
+<img src="http://outforafight.files.wordpress.com/2014/07/selector3.png"/>
+
+Image from https://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior\_trees\_for\_AI\_How\_they\_work.php
+
+
 ### Goal Oriented Action Planning
 
 As the names indicates the main purpose of this system is make the AI get to a set of goals and are obtained by doing a set of actions. The goals are consequences of actions, an example is kill the player, because it’s a consequence of attacking the player.
@@ -128,12 +143,14 @@ Some actions will satisfy more than one world state or will require a variety of
 | **Action** | **Satisfies World State** | **Requires World State** |
 | --- | --- | --- |
 | Attack target | Damage target | Be near target |
-| Chop a tree | Chopping | Axe equippedBe near tree |
+| Chop a tree | Chopping | Axe equipped Be near tree |
 
 
 The Ai has one or more current world states and this is used to chain different actions to reach the goal.
 So the way that is the action plan build is, first choose a valid goal, then see if there is an action that satisfies the world state of the goal, if the current world state isn’t the same that the action required world state it’s added another action in the action chain that satisfies this required world state and repeating the loop until an optimal world state. 
 So we keep adding actions to a queue that connects the required state of the goal to the current state.
+
+<img src="https://i.imgur.com/DGzl3RG.png" width="520" />
 
 In order to calculate the set of actions we have to create a path through all of them, so it’s used a similar system, the A* pathfinding, where each action is a node and the world requirement is the cost. 
 
@@ -147,12 +164,18 @@ The Monte Carlo tree search uses all the possible actions and generates a tree w
 It is done by:
 At the beginning of the game the AI will open a X amount of nodes that are born from a main node, (each node is an action).
 
+<img src="https://i.imgur.com/44nS8Db.png"/>
+
 Then it will run a simulation of random actions that the player and the AI can do, until the game ends, then it checks which of the actions has succeeded result or a failure, if wins or loses. Then in will open a new branch from the most successful node.
+
+<img src="https://i.imgur.com/L6rMC7l.png"/>
 
 If one node has won the simulation it’s opened a new X number of children and repeats the same calculation with every child.
 Then it runs the simulation from the other non-winner children.
 
 When all the possibilities are covered it’s used a formula to check which is the most optimal path:
+
+<img src="https://i.imgur.com/wALuh8d.png"/>
 
 It is based in four basic rules:
 
