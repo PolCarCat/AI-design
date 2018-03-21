@@ -12,7 +12,7 @@
 
 ### About me 
 
-I am Pol Carrera Catalina, student of the Bachelor’s Degree in Video Games by UPC at CITM. This content is generated for the second year’s subject Project 2, under supervision of lecturer Ricard Pillosu.
+I am [Pol Carrera Catalina](https://www.linkedin.com/in/pol-carrera-catalina-5b3722160/), student of the [Bachelor’s Degree in Video Games by UPC at CITM](https://citm.fundacioupc.com). This content is generated for the second year’s subject Project 2, under supervision of lecturer [Ricard Pillosu](https://www.linkedin.com/in/ricardpillosu/).
 
 ## Intro
 
