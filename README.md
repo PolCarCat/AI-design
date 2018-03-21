@@ -74,7 +74,7 @@ All the creatures in a video game have a set of actions that determine what are 
 Some behaviour is very simple and it’s only determined by one action, like the goombas of Mario where there are only programmed to walk in one direction. And fits with their purpose which is make the player jump. 
 But there is also more complex behaviour that allows the AI choose the actions in consequence of the in game situation. There are three main commonly used methodologies that are:
 
-###Finite state machine
+### Finite state machine
 
 The finite state machine is a system used for simple AI where there is a short amount of actions that  are connected between them. It can only be one action active and it transition to the others. This is a closed loop that it’s only broke if the unit is destroyed.
 
@@ -83,7 +83,7 @@ The flow of the nodes is determined by a series of booleans that choose the path
 
 Finite state machine example
 
-###Behaviour trees 
+### Behaviour trees 
 
 Ai also can be organized in a hierarchical structure, instead of a closed loop like the finite state machine systems. The behaviour trees separate the actions and connects them through a branching system. These branches can be expanded limitless and there are highly iterable.  
 
@@ -93,20 +93,20 @@ Each node has a current status, which can be Success, Failure or Running, that a
 
 Not all the nodes are the same, there are:
 
-####Composites: 
+#### Composites: 
 The composites are nodes that can be travelled more than one time in a path and  in iterates between its children.
 -	Sequence: This iteration its running until one of its children returns a failure. It’s used to execute a set of actions that have to be consecutive.
 -	Selector: It's the inverse to the sequence, runs until one of its children returns true, it’s used to iterate between actions with the same purpose, when the action is done the other ones are not useful so the selector stops. 
 -	Random Selector: Only executes a child choose randomly.
 
-####Decorators:
+#### Decorators:
 It can only have one child and are used to change the returned status of the its child. 
 -	Inverter: Inverts the result of the leaf.
 -	Suceder: Make that always return success, so a sequence can continue even tho one action has failed.
 -	Repeater: Makes one action be repeated a several times.
 -	Repeat Until Fail: Repeats one action until it returns failure.
 
-####Leafs: 
+#### Leafs: 
 The leafs are the actions, like walk to a certain position. And are incapable of follow a branch. 
 
 
