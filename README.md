@@ -61,7 +61,7 @@ And there are also enemies that are used to make the player struggle and test th
 
 In hollow kight there is an enemy that can only be defeated using an special ability that is learnt in the middle of the game.
 
-<img src="https://i.ytimg.com/vi/aCq-H2XC6SY/maxresdefault.jpg" width = 800/>
+<img src="https://i.ytimg.com/vi/aCq-H2XC6SY/maxresdefault.jpg" />
 https://www.youtube.com/watch?v=aCq-H2XC6SY
 
 ## Tells
@@ -70,7 +70,8 @@ As I mentioned before the tells are those actions that make the player know what
 It has to be clear and specific for each action, so if there is a strong attack the enemy will hold its position for a period of time with a unique animation. 
 In Nier automata before every enemy attack it gives audio feedback and their eyes does a red blink.
 These is also used in most of the stealth games where the player can hear the “conversations” between the AI about what are they going to do.
-<img src="https://cdn.arstechnica.net/wp-content/uploads/sites/3/2017/03/NIERA_DEMO_SS02_HeavyAttack.jpg" width = 800/>
+
+<img src="https://cdn.arstechnica.net/wp-content/uploads/sites/3/2017/03/NIERA_DEMO_SS02_HeavyAttack.jpg" />
 
 https://arstechnica.com/gaming/2017/03/nier-automata-review/
 
