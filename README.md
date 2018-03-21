@@ -70,79 +70,61 @@ These is also used in most of the stealth games where the player can hear the �
 ## Behaviour
 
 
-## Building the Extension Bundles
+All the creatures in a video game have a set of actions that determine what are they going to do. These actions have to be predictable but it can’t follow any patron, because when there is a behaviour where the human brain can recognize a patron it will not assign it to a queue of actions prepreparated and it will break the players inmersion. And also it has to be predictable because it has to be fair for the player. 
+Some behaviour is very simple and it’s only determined by one action, like the goombas of Mario where there are only programmed to walk in one direction. And fits with their purpose which is make the player jump. 
+But there is also more complex behaviour that allows the AI choose the actions in consequence of the in game situation. There are three main commonly used methodologies that are:
 
-"Building" is really just zipping. Create all archives relative to the `src` directory.
+###Finite state machine
 
-Before zipping, delete the `src/common/test` directory. This will prevent the autotests from ending up in the release.
+The finite state machine is a system used for simple AI where there is a short amount of actions that  are connected between them. It can only be one action active and it transition to the others. This is a closed loop that it’s only broke if the unit is destroyed.
 
-An important preparatory step is to remove any system-generated hidden files that shouldn't be included in the release file (like Windows' `desktop.ini` and OS X's `.DS_Store`, etc.). This shell command will delete those unwanted files:
+The finite state machine is a graphic representation between these boundaries of actions.
+The flow of the nodes is determined by a series of booleans that choose the path of the actions. So if one variable is true the AI will switch to the next action.
 
-```
-find . -name "desktop.ini" -or -name ".*" -and -not -name "." -and -not -name ".git*" -print0 | xargs -0 rm -rf
-```
+Finite state machine example
 
-### Chrome and Opera extension
+###Behaviour trees 
 
-Create a file with a `.zip` extension containing these files and directories:
+Ai also can be organized in a hierarchical structure, instead of a closed loop like the finite state machine systems. The behaviour trees separate the actions and connects them through a branching system. These branches can be expanded limitless and there are highly iterable.  
 
-```
-manifest.json
-common/
-chrome/
-```
+These method has a particularity that is that for checking the current state it has to traverse all the path since the root. 
+It follows a path build by different branches, the branches are determined by the nodes
+Each node has a current status, which can be Success, Failure or Running, that are the results if the action is done or if they are running.  
 
-### Firefox/Thunderbird extension
+Not all the nodes are the same, there are:
 
-Create a file with a `.xpi` extension containing these files and directories:
+####Composites: 
+The composites are nodes that can be travelled more than one time in a path and  in iterates between its children.
+-	Sequence: This iteration its running until one of its children returns a failure. It’s used to execute a set of actions that have to be consecutive.
+-	Selector: It's the inverse to the sequence, runs until one of its children returns true, it’s used to iterate between actions with the same purpose, when the action is done the other ones are not useful so the selector stops. 
+-	Random Selector: Only executes a child choose randomly.
 
-```
-chrome.manifest
-install.rdf
-common/
-firefox/
-```
+####Decorators:
+It can only have one child and are used to change the returned status of the its child. 
+-	Inverter: Inverts the result of the leaf.
+-	Suceder: Make that always return success, so a sequence can continue even tho one action has failed.
+-	Repeater: Makes one action be repeated a several times.
+-	Repeat Until Fail: Repeats one action until it returns failure.
 
-### Safari extension
+####Leafs: 
+The leafs are the actions, like walk to a certain position. And are incapable of follow a branch. 
 
-The browser-specific code is located in the [`markdown-here-safari`](https://github.com/adam-p/markdown-here-safari) project.
 
-Use the Safari Extension Builder.
+ 
+###Goal Oriented Action Planning
 
-## Next Steps
+As the names indicates the main purpose of this system is make the AI get to a set of goals and are obtained by doing a set of actions. The goals are consequences of actions, an example is kill the player, because it’s a consequence of attacking the player.
+The actions are  can be distributed with an importance scale and then check which is the highest valid action. 
+These goals need a basic requirement that is the previous action, also called the desired world state, it’s the only way to reach that objective.
 
-See the [issues list](https://github.com/adam-p/markdown-here/issues) and the [Notes Wiki](https://github.com/adam-p/markdown-here/wiki/Development-Notes). All ideas, bugs, plans, complaints, and dreams will end up in one of those two places.
+The AI will also have a list of actions that carries to basic concepts, which of the world states satisfies and which state requires, from where is going to where to go. 
+Some actions will satisfy more than one world state or will require a variety of world states.
 
-Feel free to create a feature request issue if what you want isn't already there. If you'd prefer a less formal approach to floating an idea, post to the ["markdown-here" Google Group](https://groups.google.com/forum/?fromgroups=#!forum/markdown-here).
+| **Action** | **Satisfies World State** | **Requires World State** |
+| --- | --- | --- |
+| Attack target | Damage target | Be near target |
+| Chop a tree | Choping | Axe equippedBe near tree |
 
-It also takes a fair bit of work to stay up-to-date with the latest changes in all the applications and web sites where Markdown Here works.
 
-## Credits
 
-*Markdown Here* was coded on the shoulders of giants.
 
-* Markdown-to-HTML: [chjj / marked](https://github.com/chjj/marked)
-* Syntax highlighting: [isagalaev / highlight.js](https://github.com/isagalaev/highlight.js)
-* HTML-to-text: [mtrimpe / jsHtmlToText](https://github.com/mtrimpe/jsHtmlToText)
-
-## Feedback
-
-All bugs, feature requests, pull requests, feedback, etc., are welcome. [Create an issue](https://github.com/adam-p/markdown-here/issues). Or [post to the "markdown-here" Google Group](https://groups.google.com/forum/?fromgroups=#!forum/markdown-here).
-
-## License
-
-### Code
-
-MIT License: http://adampritchard.mit-license.org/ or see [the `LICENSE` file](https://github.com/adam-p/markdown-here/blob/master/LICENSE).
-
-### Logo
-
-Copyright 2015, [Austin Anderson](http://protractor.ninja/). Licensed to Markdown Here under the [MDH contributor license agreement](https://github.com/adam-p/markdown-here/blob/master/CLA-individual.md).
-
-### Other images
-
-[Creative Commons Attribution 3.0 Unported (CC BY 3.0) License](http://creativecommons.org/licenses/by/3.0/)
-
----
-
-![Dos Equis man says](https://raw.github.com/adam-p/markdown-here/master/store-assets/dos-equis-MDH.jpg)
